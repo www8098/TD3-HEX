@@ -52,6 +52,10 @@ def setCameraPic(robot_id: int, width: int = 224, height: int = 224, physicsClie
 
 class HexapodBulletEnv(gym.Env):
     """Hexapod environnement using PyBullet."""
+    metadata = {
+        "render.modes": ["human"],
+        "video.frames_per_second": 100,
+    }
 
     def __init__(self, time_step=0.05, frameskip=12, render=False):
         super().__init__()
@@ -138,7 +142,7 @@ class HexapodBulletEnv(gym.Env):
         p.setJointMotorControlArray(bodyIndex=self.robot_id,
                                     jointIndices=self.joint_list,
                                     controlMode=p.POSITION_CONTROL,
-                                    targetPositions =action,
+                                    targetPositions=action,
                                     forces=max_torques)
 
         # Wait for environment step
@@ -153,6 +157,38 @@ class HexapodBulletEnv(gym.Env):
         reward = self._get_reward()
         done = bool(self.observation[-4] < 0.08)  # Has fallen?
         return self.observation, reward, done, {}
+
+    def render(self, mode='human'):
+        if mode == "human":
+            return np.array([])
+        else:
+            raise NameError
+
+        # position = p.getBasePositionAndOrientation(self.robot_id)[0]
+        # view_matrix = p.computeViewMatrixFromYawPitchRoll(
+        #     cameraTargetPosition=position,
+        #     distance=0.6,
+        #     yaw=30,
+        #     pitch=-30,
+        #     roll=0,
+        #     upAxisIndex=2,
+        # )
+        # proj_matrix = p.computeProjectionMatrixFOV(
+        #     fov=60,
+        #     aspect=960. / 720,
+        #     nearVal=0.1,
+        #     farVal=100.0,
+        # )
+        # _, _, px, _, _ = p.getCameraImage(
+        #     width=960,
+        #     height=720,
+        #     viewMatrix=view_matrix,
+        #     projectionMatrix=proj_matrix,
+        #     renderer=p.ER_TINY_RENDERER,
+        # )
+        # rgb_array = np.array(px)
+        # rgb_array = rgb_array[:, :, :3]
+        # return rgb_array
 
     @staticmethod
     def seed(seed=None):

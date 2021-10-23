@@ -16,6 +16,8 @@ from trainer import *
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
+MODE = 'A'
+
 if __name__ == "__main__":
     args = get_args()
     if args.mode != 'BC+FineTune':
@@ -25,7 +27,10 @@ if __name__ == "__main__":
         args.output = get_output_folder('bc_output', args.env)
         
     if args.resume == 'default':
-        args.resume = 'output/{}-run2'.format('kraby')
+        if MODE == 'COUPLE':
+            args.resume = 'output/{}-couple'.format('kraby')
+        else:
+            args.resume = 'output/{}-normal'.format('kraby')
 
 #  C:\Users\ASUS\AppData\Roaming\Python\Python37\site-packages\gym_kraby\envs
     if args.mode == 'train':
@@ -52,19 +57,22 @@ if __name__ == "__main__":
         torch.backends.cudnn.benchmark = False
 
     nb_states = env.observation_space.shape[0] * args.window_length
-    nb_actions = env.action_space.shape[0]
-    # nb_actions = 6
+    if MODE == 'COUPLE':
+        nb_actions = 6
+    else:
+        nb_actions = env.action_space.shape[0]
+
     print(nb_actions)
 
     agent = TD3(nb_states, nb_actions, args, noise=False)
     evaluate = Evaluator(args.validate_episodes, 
-        args.validate_steps, args.output, max_episode_length=args.max_episode_length)
+        args.validate_steps, MODE, args.output, episodes_length=args.max_episode_length)
 
     # agent.load_weights(args.resume)
     # agent.load_weights('bc_output/Walker2d-v2')
 
     if args.mode == 'train':
-        train(writer, args, agent, env, evaluate, 
+        train(writer, args, agent, env, evaluate, MODE,
             debug=args.debug, num_interm=args.num_interm, visualize=False)
 
     elif args.mode == 'test':

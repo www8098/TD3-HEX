@@ -1,34 +1,38 @@
 
 import numpy as np
+import copy
 import matplotlib.pyplot as plt
-from scipy.io import savemat
+import scipy.io
 from memory import RingBuffer
-from util import *
-from copy import deepcopy
+from util import get_output_folder, duplicate_action
+
+# [reference]: https://github.com/ghliu/pytorch-ddpg/master/main
+
 
 class Evaluator(object):
 
-    def __init__(self, num_episodes, interval, save_path='', max_episode_length=None):
-        self.num_episodes = num_episodes
-        self.max_episode_length = max_episode_length
+    def __init__(self, episodes_num, interval, mode, save_path='', episodes_length=None):
+        self.episodes_num = episodes_num
         self.interval = interval
+        self.mode = mode
         self.save_path = save_path
-        self.results = np.array([]).reshape(num_episodes,0)
+        self.episodes_length = episodes_length
+        
+        self.res = np.array([]).reshape(episodes_num, 0)
 
     def __call__(self, env, policy, window_length, debug=False, visualize=False, save=True):
 
         self.is_training = False
-        observation = None
-        result = []
+        result = list()
         ob_buf = RingBuffer(window_length)
         observation = env.reset()
         for i in range(window_length):
-            ob_buf.append(deepcopy(observation))
+            ob_buf.append(copy.deepcopy(observation))
 
-        for episode in range(self.num_episodes):
+        for episode in range(self.episodes_num):
             # reset at the start of episode
             observation = env.reset()
-            ob_buf.append(deepcopy(observation))
+            ob_buf.append(copy.deepcopy(observation))
             episode_steps = 0
             episode_reward = 0.
                 
@@ -45,13 +49,15 @@ class Evaluator(object):
                     for i in range(window_length):
                         ob.extend(ob_buf[i])
                     action = policy(ob)
-                
-                # observation, reward, done, info = env.step(duplicate_action(action))
-                observation, reward, done, info = env.step(action)
 
-                ob_buf.append(deepcopy(observation))
+                if self.mode == 'COUPLE':
+                    observation, reward, done, info = env.step(duplicate_action(action))
+                else:
+                    observation, reward, done, info = env.step(action)
+
+                ob_buf.append(copy.deepcopy(observation))
                 
-                if self.max_episode_length and episode_steps >= self.max_episode_length -1:
+                if self.episodes_length and episode_steps >= self.episodes_length -1:
                     done = True
                 
                 if visualize:
@@ -65,7 +71,7 @@ class Evaluator(object):
             result.append(episode_reward)
 
         result = np.array(result).reshape(-1,1)
-        self.results = np.hstack([self.results, result])
+        self.res = np.hstack([self.res, result])
 
         if save:
             self.save_results('{}/validate_reward'.format(self.save_path))
@@ -73,13 +79,13 @@ class Evaluator(object):
 
     def save_results(self, fn):
 
-        y = np.mean(self.results, axis=0)
-        error=np.std(self.results, axis=0)
+        y = np.mean(self.res, axis=0)
+        error=np.std(self.res, axis=0)
                     
-        x = range(0,self.results.shape[1]*self.interval,self.interval)
+        x = range(0,self.res.shape[1]*self.interval, self.interval)
         fig, ax = plt.subplots(1, 1, figsize=(6, 5))
-        plt.xlabel('Timestep')
+        plt.xlabel('Time step')
         plt.ylabel('Average Reward')
         ax.errorbar(x, y, yerr=error, fmt='-o')
         plt.savefig(fn+'.png')
-        savemat(fn+'.mat', {'reward':self.results})
+        scipy.io.savemat(fn+'.mat', {'reward': self.res})

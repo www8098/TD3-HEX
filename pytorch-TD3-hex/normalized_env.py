@@ -1,7 +1,7 @@
 import gym
 import numpy as np
 
-# https://github.com/openai/gym/blob/master/gym/core.py
+# [reference] https://github.com/openai/gym/blob/master/gym/core.py
 
 
 class NormalizedEnv(gym.ActionWrapper):
@@ -10,15 +10,9 @@ class NormalizedEnv(gym.ActionWrapper):
         super().__init__(env)
 
     def action(self, action):
-        act_k = (self.action_space.high - self.action_space.low)/ 2.
-        act_b = (self.action_space.high + self.action_space.low)/ 2.
-        return act_k * action + act_b
+        return action *(self.action_space.high - self.action_space.low)/2 + \
+               (self.action_space.high + self.action_space.low) / 2
 
-    def reverse_action(self, action):
-        act_k_inv = 2./(self.action_space.high - self.action_space.low)
-        act_b = (self.action_space.high + self.action_space.low)/ 2.
-        return act_k_inv * (action - act_b)
-    
 
 class reward_clip(gym.RewardWrapper):
     """ Wrap reward """
