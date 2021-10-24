@@ -4,7 +4,7 @@ import copy
 import matplotlib.pyplot as plt
 import scipy.io
 from memory import RingBuffer
-from util import get_output_folder, duplicate_action
+from util import duplicate_action, print_yellow
 
 # [reference]: https://github.com/ghliu/pytorch-ddpg/master/main
 
@@ -67,7 +67,7 @@ class Evaluator(object):
                 episode_reward += reward
                 episode_steps += 1
 
-            if debug: prYellow('[Evaluate] #Episode{}: episode_reward:{}'.format(episode,episode_reward))
+            if debug: print_yellow('[Evaluate] #Episode{}: episode_reward:{}'.format(episode,episode_reward))
             result.append(episode_reward)
 
         result = np.array(result).reshape(-1,1)

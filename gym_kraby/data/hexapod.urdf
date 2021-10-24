@@ -216,7 +216,7 @@
       <damping value="1000" />
     </contact>
   </link>
-  
+
   <!-- Leg 1 -->
   <joint name="fixed_box_servomotor_3" type="fixed">
     <origin xyz="0.092225 0.0 0.2041193" rpy="0 0 0.0" />
@@ -404,7 +404,7 @@
       <damping value="1000" />
     </contact>
   </link>
-  
+
   <!-- Leg 2 -->
   <joint name="fixed_box_servomotor_6" type="fixed">
     <origin xyz="0.06521292289492935 0.06521292289492935 0.2041193" rpy="0 0 0.78539" />
@@ -592,9 +592,9 @@
       <damping value="1000" />
     </contact>
   </link>
-  
 
-  
+
+
   <!-- Leg 3 -->
   <joint name="fixed_box_servomotor_9" type="fixed">
     <origin xyz="-0.06521292289492935 0.06521292289492935 0.2041193" rpy="0 0 -0.78539" />
@@ -782,7 +782,7 @@
       <damping value="1000" />
     </contact>
   </link>
-  
+
   <!-- Leg 4 -->
   <joint name="fixed_box_servomotor_12" type="fixed">
     <origin xyz="-0.092225 -0.0 0.2041193" rpy="0 0 0.0" />
@@ -970,7 +970,7 @@
       <damping value="1000" />
     </contact>
   </link>
-  
+
   <!-- Leg 5 -->
   <joint name="fixed_box_servomotor_15" type="fixed">
     <origin xyz="-0.06521292289492935 -0.06521292289492935 0.2041193" rpy="0 0 0.78539" />

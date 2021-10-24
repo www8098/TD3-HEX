@@ -2,7 +2,7 @@ import argparse
 
 def get_args():
     parser = argparse.ArgumentParser(description='Model architecture and training  parameters')
-    parser.add_argument('--mode', default='train', type=str, help='train/test/bc')
+    parser.add_argument('--mode', default='test', type=str, help='train/test/bc')
     # parser.add_argument('--env', default='Pendulum-v0', type=str, help='open-ai gym environment')
     # parser.add_argument('--env', default='BipedalWalker-v3', type=str, help='open-ai gym environment')
     # parser.add_argument('--env', default='BipedalWalkerHardcore-v3', type=str, help='open-ai gym environment')
@@ -47,12 +47,12 @@ def get_args():
     parser.add_argument('--output', default='output', type=str, help='')
     parser.add_argument('--init_w', default=0.003, type=float, help='') 
 
-    parser.add_argument('--train_iter', default=500000, type=int, help='total training steps')
+    parser.add_argument('--train_iter', default=1000000, type=int, help='total training steps')
 
-    parser.add_argument('--epsilon', default=300000, type=int, help='linear decay of exploration policy')
+    parser.add_argument('--epsilon', default=600000, type=int, help='linear decay of exploration policy')
     parser.add_argument('--num_interm', default=20, type=int, help='how many intermidate saves')
     parser.add_argument('--policy_delay', default=2, type=int)
-    parser.add_argument('--noise_decay', default=300000, type=int)
+    parser.add_argument('--noise_decay', default=600000, type=int)
 
     args = parser.parse_args()    
     return args

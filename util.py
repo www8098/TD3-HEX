@@ -62,11 +62,14 @@ def get_output_folder(root_dir, env_name):
 
 def duplicate_action(action):
     pairA = action[:3]
-    pairB = action[3:]
-    mask = np.array([-1, 1, 1])
+    pairB = action[3:6]
+
+    if action[6] <= 0.5:
+        mask = np.array([-1, 1, 1])
+    else:
+        mask = np.array([1, 1, 1])
+
     a = np.concatenate((pairA, pairB, pairA, pairB*mask, pairA*mask, pairB*mask))
     a = a/2
     return a
-
-
 

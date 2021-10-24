@@ -29,7 +29,7 @@ def train(writer, args, agent, env,  evaluate, mode, debug=False, num_interm=25,
         # agent pick ActionNoise ...
         if step <= args.warmup:
             if mode == 'COUPLE':
-                action = np.random.uniform(-1, 1, 6)
+                action = np.random.uniform(-1, 1, 7)
             else:
                 action = env.action_space.sample()
             agent.a_t = action

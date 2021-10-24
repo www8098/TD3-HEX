@@ -16,7 +16,7 @@ from trainer import *
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
-MODE = 'A'
+MODE = 'COUPLE'
 
 if __name__ == "__main__":
     args = get_args()
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         
     if args.resume == 'default':
         if MODE == 'COUPLE':
-            args.resume = 'output/{}-couple'.format('kraby')
+            args.resume = 'output/{}-run4'.format('kraby')
         else:
             args.resume = 'output/{}-normal'.format('kraby')
 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     nb_states = env.observation_space.shape[0] * args.window_length
     if MODE == 'COUPLE':
-        nb_actions = 6
+        nb_actions = 7
     else:
         nb_actions = env.action_space.shape[0]
 
