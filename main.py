@@ -16,21 +16,28 @@ from trainer import *
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
-MODE = 'A'
+MODE = 'ROTATION'
 
 if __name__ == "__main__":
     args = get_args()
+    args.method = MODE
+
     if args.mode != 'BC+FineTune':
         # args.output = get_output_folder(args.output, args.env)
-        args.output = get_output_folder(args.output, 'kraby')
+        args.output = get_output_folder(args.output, 'kraby-{}'.format(MODE))
     else:
         args.output = get_output_folder('bc_output', args.env)
         
     if args.resume == 'default':
-        if MODE == 'COUPLE':
+        if args.method == 'COUPLE':
             args.resume = 'output/{}-couple'.format('kraby')
-        else:
+        elif args.method == 'NORMAL':
             args.resume = 'output/{}-normal'.format('kraby')
+        elif args.method == 'ROTATION':
+            args.resume = 'output/{}-rotation'.format('kraby')
+        elif args.method == 'AUTO':
+            args.resume == 'output/{}-auto'.format('kraby')
+
 
 #  C:\Users\ASUS\AppData\Roaming\Python\Python37\site-packages\gym_kraby\envs
     if args.mode == 'train':
@@ -57,16 +64,19 @@ if __name__ == "__main__":
         torch.backends.cudnn.benchmark = False
 
     nb_states = env.observation_space.shape[0] * args.window_length
-    if MODE == 'COUPLE':
+    if args.method == 'COUPLE':
         nb_actions = 6
-    else:
+    elif args.method in ['ROTATION', 'AUTO']:
+        nb_actions = 7
+    elif args.method == 'NORMAL':
         nb_actions = env.action_space.shape[0]
+
 
     print(nb_actions)
 
     agent = TD3(nb_states, nb_actions, args, noise=False)
     evaluate = Evaluator(args.validate_episodes, 
-        args.validate_steps, MODE, args.output, episodes_length=args.max_episode_length)
+        args.validate_steps, args.method, args.output, episodes_length=args.max_episode_length)
 
     # agent.load_weights(args.resume)
     # agent.load_weights('bc_output/Walker2d-v2')

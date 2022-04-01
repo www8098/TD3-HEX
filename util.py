@@ -60,12 +60,32 @@ def get_output_folder(root_dir, env_name):
     return root_dir
 
 
-def duplicate_action(action):
-    pairA = action[:3]
-    pairB = action[3:]
-    mask = np.array([-1, 1, 1])
-    a = np.concatenate((pairA, pairB, pairA, pairB*mask, pairA*mask, pairB*mask))
-    a = a/2
+def duplicate_action(action, method):
+    if method == 'COUPLE':
+        pairA = action[:3]
+        pairB = action[3:]
+        mask = np.array([-1, 1, 1])
+        a = np.concatenate((pairA, pairB, pairA, pairB*mask, pairA*mask, pairB*mask))
+        a = a/2
+
+    elif method == 'ROTATION':
+        pairA = action[1:4]
+        pairB = action[4:]
+
+        if action[0] > 0:
+            mask = np.array([-1, 1, 1])
+        else:
+            mask = np.array([1, 1, 1])
+
+        a = np.concatenate((pairA, pairB, pairA, pairB * mask, pairA * mask, pairB * mask))
+        a = a / 2
+
+    elif method == 'AUTO':
+        pairA = action[1:4]
+        pairB = action[4:]
+        mask = np.array([action[0], 1, 1])
+        a = np.concatenate((pairA, pairB, pairA, pairB * mask, pairA * mask, pairB * mask))
+        a = a / 2
     return a
 
 

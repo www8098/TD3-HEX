@@ -28,8 +28,10 @@ def train(writer, args, agent, env,  evaluate, mode, debug=False, num_interm=25,
 
         # agent pick ActionNoise ...
         if step <= args.warmup:
-            if mode == 'COUPLE':
+            if args.method == 'COUPLE':
                 action = np.random.uniform(-1, 1, 6)
+            elif args.method in ['ROTATION', 'AUT0']:
+                action = np.random.uniform(-1, 1, 7)
             else:
                 action = env.action_space.sample()
             agent.a_t = action
@@ -44,10 +46,10 @@ def train(writer, args, agent, env,  evaluate, mode, debug=False, num_interm=25,
             env.render()
 
         # print(ActionNoise)
-        if mode == 'COUPLE':
-            observation2, reward, done, info = env.step(duplicate_action(action))
-        else:
+        if mode == 'NORMAL':
             observation2, reward, done, info = env.step(action)
+        else:
+            observation2, reward, done, info = env.step(duplicate_action(action, args.method))
 
         observation2 = deepcopy(observation2)                                       # deep copy
         ob_buffer.append(deepcopy(observation2))

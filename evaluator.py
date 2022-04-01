@@ -50,8 +50,8 @@ class Evaluator(object):
                         ob.extend(ob_buf[i])
                     action = policy(ob)
 
-                if self.mode == 'COUPLE':
-                    observation, reward, done, info = env.step(duplicate_action(action))
+                if self.mode in ['COUPLE', 'ROTATION', 'AUTO']:
+                    observation, reward, done, info = env.step(duplicate_action(action), self.mode)
                 else:
                     observation, reward, done, info = env.step(action)
 

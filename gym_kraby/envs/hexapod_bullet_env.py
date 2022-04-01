@@ -14,6 +14,7 @@ except ImportError:
 BASE_RADIUS = 1
 BASE_THICKNESS = 1
 
+
 def setCameraPic(robot_id: int, width: int = 224, height: int = 224, physicsClientId: int = 0):
     pos, orientation = p.getBasePositionAndOrientation(robot_id, physicsClientId=physicsClientId)
     # 从四元数中获取变换矩阵，从中获知指向(左乘(1,0,0)，因为在原本的坐标系内，摄像机的朝向为(1,0,0))
