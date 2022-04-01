@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7675540c-95ba-424e-9ad3-672edfd5b9a8" name="Default Changelist" comment="Update rotate coupling">
+      <change afterPath="$PROJECT_DIR$/CompPic/kraby-100/TD3_GaitCoupling+DeeperNetwork/events.out.tfevents.1637044621.LAPTOP-N6MT5K2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompPic/Comp-100/Double Coupling/events.out.tfevents.1635015405.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/kraby-100/TD3_Forward_Coupling/events.out.tfevents.1635015405.LAPTOP-N6MT5K2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompPic/Comp-100/TD3 with Coupling/events.out.tfevents.1631957613.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/kraby-100/TD3_Forward_and_Rotation_Coupling/events.out.tfevents.1631957613.LAPTOP-N6MT5K2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompPic/Comp-100/original TD3/events.out.tfevents.1632213475.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/kraby-100/original_TD3/events.out.tfevents.1632213475.LAPTOP-N6MT5K2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompPic/Compic-50/TD3 with Gaits coupling/events.out.tfevents.1633350315.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/Compic-50/TD3_ForwardCoupling/events.out.tfevents.1633350315.LAPTOP-N6MT5K2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompPic/Compic-50/original TD3/events.out.tfevents.1633363377.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/Compic-50/original_TD3/events.out.tfevents.1633363377.LAPTOP-N6MT5K2P" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym_kraby/data/hexapod.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/gym_kraby/data/hexapod.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym_kraby/envs/hexapod_bullet_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym_kraby/envs/hexapod_bullet_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/td3.py" beforeDir="false" afterPath="$PROJECT_DIR$/td3.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/www8098/TD3-HEX" />
+      </set>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="5a71dadd-299e-4508-87d3-d0786336db42" />
+  <component name="ProjectId" id="1zuRDDRvwUPmXloG92hkHEqEUOD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\kraby-100\TD3_GaitCoupling+DeeperNetwork" />
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\Comp-100" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\gym_kraby\data" />
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="harmmer" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TD3-HEX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\PYTHON\ANOCONDA\envs\tensorflow20\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\harmmer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TD3-HEX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\PYTHON\ANOCONDA\envs\tensorflow20\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="meta" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="TD3-HEX" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\PYTHON\ANOCONDA\envs\tensorflow20\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/meta.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.meta" />
+      <item itemvalue="Python.harmmer" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7675540c-95ba-424e-9ad3-672edfd5b9a8" name="Default Changelist" comment="" />
+      <created>1634995864320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634995864320</updated>
+      <workItem from="1634995865375" duration="67000" />
+      <workItem from="1635008275581" duration="5172000" />
+      <workItem from="1635035564323" duration="699000" />
+      <workItem from="1635046409000" duration="1893000" />
+      <workItem from="1635052583589" duration="1237000" />
+      <workItem from="1635063642726" duration="2465000" />
+      <workItem from="1635077892539" duration="103000" />
+      <workItem from="1635184193842" duration="170000" />
+      <workItem from="1635185764108" duration="14000" />
+      <workItem from="1635191353332" duration="3569000" />
+      <workItem from="1635304016804" duration="647000" />
+      <workItem from="1635497895504" duration="2854000" />
+      <workItem from="1635521240027" duration="1384000" />
+      <workItem from="1635771977829" duration="1988000" />
+      <workItem from="1635785472424" duration="1304000" />
+      <workItem from="1635813695260" duration="1485000" />
+      <workItem from="1635825564896" duration="278000" />
+      <workItem from="1635825854283" duration="86000" />
+      <workItem from="1635825950147" duration="823000" />
+      <workItem from="1635848628529" duration="839000" />
+      <workItem from="1635856025206" duration="21000" />
+      <workItem from="1635903483759" duration="445000" />
+      <workItem from="1635933740227" duration="1419000" />
+      <workItem from="1636537169854" duration="1453000" />
+      <workItem from="1636681569498" duration="1805000" />
+      <workItem from="1636723174342" duration="764000" />
+      <workItem from="1636740069874" duration="41000" />
+      <workItem from="1636943704322" duration="3588000" />
+      <workItem from="1636964160511" duration="157000" />
+      <workItem from="1636978726193" duration="260000" />
+      <workItem from="1636980305162" duration="271000" />
+      <workItem from="1636997505321" duration="47000" />
+      <workItem from="1637019236751" duration="117000" />
+      <workItem from="1637031527467" duration="2960000" />
+      <workItem from="1637045319937" duration="651000" />
+      <workItem from="1637046208466" duration="1635000" />
+      <workItem from="1637048767424" duration="338000" />
+      <workItem from="1637051526087" duration="2566000" />
+      <workItem from="1637056872182" duration="751000" />
+      <workItem from="1637063935700" duration="21000" />
+      <workItem from="1637118544990" duration="457000" />
+      <workItem from="1638007394771" duration="205000" />
+      <workItem from="1638096320049" duration="17000" />
+      <workItem from="1638111891659" duration="242000" />
+      <workItem from="1638151035185" duration="40000" />
+      <workItem from="1638158044777" duration="3000" />
+      <workItem from="1638158060296" duration="198000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update rotate coupling">
+      <created>1635046788454</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635046788454</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update rotate coupling">
+      <created>1635826186442</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635826186442</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update rotate coupling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update rotate coupling" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636682719886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636682719886" />
+    <state x="697" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636953862466">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636953862466" />
+    <state x="740" y="287" key="FileChooserDialogImpl" timestamp="1637063952591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1637063952591" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1637057881038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1637057881038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1637057881038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1637057881038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1635046804652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635046804652" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trainer.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TD3_HEX$meta.coverage" NAME="meta Coverage Results" MODIFIED="1635815166582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TD3_HEX$harmmer.coverage" NAME="harmmer Coverage Results" MODIFIED="1636682580389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TD3_HEX$main.coverage" NAME="main Coverage Results" MODIFIED="1637057845539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
