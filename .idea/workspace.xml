@@ -20,18 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7675540c-95ba-424e-9ad3-672edfd5b9a8" name="Default Changelist" comment="Update rotate coupling">
-      <change afterPath="$PROJECT_DIR$/CompPic/kraby-100/TD3_GaitCoupling+DeeperNetwork/events.out.tfevents.1637044621.LAPTOP-N6MT5K2P" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompPic/Comp-100/Double Coupling/events.out.tfevents.1635015405.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/kraby-100/TD3_Forward_Coupling/events.out.tfevents.1635015405.LAPTOP-N6MT5K2P" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompPic/Comp-100/TD3 with Coupling/events.out.tfevents.1631957613.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/kraby-100/TD3_Forward_and_Rotation_Coupling/events.out.tfevents.1631957613.LAPTOP-N6MT5K2P" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompPic/Comp-100/original TD3/events.out.tfevents.1632213475.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/kraby-100/original_TD3/events.out.tfevents.1632213475.LAPTOP-N6MT5K2P" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompPic/Compic-50/TD3 with Gaits coupling/events.out.tfevents.1633350315.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/Compic-50/TD3_ForwardCoupling/events.out.tfevents.1633350315.LAPTOP-N6MT5K2P" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompPic/Compic-50/original TD3/events.out.tfevents.1633363377.LAPTOP-N6MT5K2P" beforeDir="false" afterPath="$PROJECT_DIR$/CompPic/Compic-50/original_TD3/events.out.tfevents.1633363377.LAPTOP-N6MT5K2P" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym_kraby/data/hexapod.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/gym_kraby/data/hexapod.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gym_kraby/envs/hexapod_bullet_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym_kraby/envs/hexapod_bullet_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/td3.py" beforeDir="false" afterPath="$PROJECT_DIR$/td3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/actor.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/critic1.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/critic2.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/tensorboardx_log/events.out.tfevents.1648782549.LAPTOP-N6MT5K2P" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +65,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\kraby-100\TD3_GaitCoupling+DeeperNetwork" />
-      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\Comp-100" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\gym_kraby\data" />
       <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\kraby-100\TD3_GaitCoupling+DeeperNetwork" />
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\Comp-100" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -208,6 +202,11 @@
       <workItem from="1638151035185" duration="40000" />
       <workItem from="1638158044777" duration="3000" />
       <workItem from="1638158060296" duration="198000" />
+      <workItem from="1648782467474" duration="2885000" />
+      <workItem from="1649061927527" duration="147000" />
+      <workItem from="1649222873374" duration="625000" />
+      <workItem from="1649309029649" duration="1514000" />
+      <workItem from="1649432425913" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="Update rotate coupling">
       <created>1635046788454</created>
@@ -223,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635826186442</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update rotate coupling">
+      <created>1648782578924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648782578924</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,38 +252,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update rotate coupling" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636682719886">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1649309399529">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" width="1092" height="765" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636682719886" />
-    <state x="697" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1636953862466">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1649309399529" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1649433037610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="697" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1636953862466" />
-    <state x="740" y="287" key="FileChooserDialogImpl" timestamp="1637063952591">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1649433037610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1637063952591" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1637057881038">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1649433037610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1637057881038">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1649433037610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1637057881038">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1648782588825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1637057881038">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637057881038" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1635046804652">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635046804652" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1648782588825" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -292,6 +290,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TD3_HEX$meta.coverage" NAME="meta Coverage Results" MODIFIED="1635815166582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TD3_HEX$harmmer.coverage" NAME="harmmer Coverage Results" MODIFIED="1636682580389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TD3_HEX$main.coverage" NAME="main Coverage Results" MODIFIED="1637057845539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TD3_HEX$main.coverage" NAME="main Coverage Results" MODIFIED="1649433037597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
