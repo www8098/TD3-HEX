@@ -58,7 +58,7 @@ class HexapodBulletEnv(gym.Env):
         "video.frames_per_second": 100,
     }
 
-    def __init__(self, time_step=0.05, frameskip=12, render=False):
+    def __init__(self, time_step=0.05, frameskip=12, render=False, direction='FORWARD'):
         super().__init__()
 
         # Init PyBullet in GUI or DIRECT mode
@@ -90,6 +90,11 @@ class HexapodBulletEnv(gym.Env):
         # Seed random number generator
         self.seed()
 
+        # Init motion direction
+        if direction not in ('FORWARD', 'BACKWARD', 'LEFT', 'RIGHT'):
+            raise Exception('illegal direction')
+        self.direction = direction
+
         # Init world
         p.setTimeStep(self.dt / self.frameskip)  # between 0.001 and 0.01 s
         p.resetSimulation()
@@ -120,6 +125,10 @@ class HexapodBulletEnv(gym.Env):
                               np.random.uniform(low=-np.pi/4, high=np.pi/4))
 
         # Set random target and put it in observations
+        target_pos = {'FORWARD':    [0, -1, 0.1],
+                      'BACKWARD':   [0, 1, 0.1],
+                      'LEFT':       [1, 0, 0.1],
+                      'RIGHT':      [-1, 0, 0.1]}
         self.target_position = np.array([0, -1, 0.1])
         self.observation[-3:] = self.target_position
 

@@ -20,17 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7675540c-95ba-424e-9ad3-672edfd5b9a8" name="Default Changelist" comment="Update rotate coupling">
+      <change afterPath="$PROJECT_DIR$/CompPic/Comp-100/ConRotation/events.out.tfevents.1649433048.LAPTOP-N6MT5K2P" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gym_kraby/envs/hexapod_bullet_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym_kraby/envs/hexapod_bullet_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/actor.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/critic1.pkl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/critic2.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/tensorboardx_log/events.out.tfevents.1648782549.LAPTOP-N6MT5K2P" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/kraby-ROTATION-run2/tensorboardx_log/events.out.tfevents.1649433048.LAPTOP-N6MT5K2P" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -63,9 +76,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\Comp-100\ConRotation" />
+      <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\CompPic\Comp-100" />
       <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX\gym_kraby\data" />
       <recent name="C:\PYTHON\python_project\GithubDesktop\TD3-HEX" />
     </key>
@@ -206,7 +222,12 @@
       <workItem from="1649061927527" duration="147000" />
       <workItem from="1649222873374" duration="625000" />
       <workItem from="1649309029649" duration="1514000" />
-      <workItem from="1649432425913" duration="615000" />
+      <workItem from="1649432425913" duration="1239000" />
+      <workItem from="1649473269729" duration="445000" />
+      <workItem from="1649483881572" duration="510000" />
+      <workItem from="1649732982842" duration="2688000" />
+      <workItem from="1651872258849" duration="35000" />
+      <workItem from="1652774582659" duration="4438000" />
     </task>
     <task id="LOCAL-00001" summary="Update rotate coupling">
       <created>1635046788454</created>
@@ -229,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648782578924</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update rotate coupling">
+      <created>1649433057393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649433057393</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update rotate coupling">
+      <created>1649433066312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649433066312</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,30 +287,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update rotate coupling" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1649309399529">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1651872292215">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1649309399529" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1649433037610">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651872292215" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1649467292908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1649433037610">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1649467292908" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1649467292908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1649433037610">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1649467292908" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1649467292908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1649433037610">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1649467292908" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1649467292908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1649433037610" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1648782588825">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1649467292908" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1649733891482">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1648782588825" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1649733891482" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1649433069520">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1649433069520" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -290,6 +329,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TD3_HEX$meta.coverage" NAME="meta Coverage Results" MODIFIED="1635815166582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TD3_HEX$harmmer.coverage" NAME="harmmer Coverage Results" MODIFIED="1636682580389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TD3_HEX$main.coverage" NAME="main Coverage Results" MODIFIED="1649433037597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TD3_HEX$main.coverage" NAME="main Coverage Results" MODIFIED="1649433047872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
